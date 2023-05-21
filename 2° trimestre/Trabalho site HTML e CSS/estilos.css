@@ -1,0 +1,112 @@
+body{
+   background-color: #16453E;
+   font-family: "Ariel";
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sono:wght@200;400;500&display=swap');
+
+#site{
+    width: 100%;
+   
+    margin: 0 auto;
+    display: grid;
+    /* grid-template-columns: auto auto  ; */
+    /* grid-template-columns:30% 70% ; */
+    /* grid-template-columns: 100px 300px ; */
+    grid-template-areas: 
+    'topo   topo   topo'
+    'menu   menu   menu'
+    'intro   intro   principal'
+    'intro   intro   principal'
+        
+    ;
+}
+#site div{
+    padding: 1em;
+}
+#topo{
+   
+    grid-area: topo;
+    height: 100px;
+}
+#menu{
+     grid-area: menu;
+}
+#intro{
+   grid-area: intro;
+}
+#principal{
+   
+    grid-area: principal;
+    width: 600px;
+}
+@font-face{
+    font-family: 'harry potter';
+    src: url('HARRYP__.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    color:#ff0000;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'harry potter';
+    
+}
+h2{
+    color: rgb(255, 240, 240);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'harry potter';
+}
+p{
+    color: aliceblue;
+    font-family: "Sono";
+    background-color: rgba(0, 0, 0, 0.549);
+    box-shadow: 10px 10px 8px  rgba(207, 14, 14, 0.508);
+    font-size:190%;
+    
+}
+#galeria{
+    display: grid;
+     grid-template-columns: auto auto ; 
+     grid-column-gap: 20px;
+     grid-row-gap: 20px;
+    /* grid-template-columns: 25% 50% 25%; */
+}
+#galeria img{
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+}
+
+
+.menu{
+    background-color:#540b0e ;
+    color:#e9edc9;
+    text-decoration: none;
+    font-weight: 700; /*400 normal, 700 negrito*/
+    display: inline-block; /* depois eu explico*/
+    padding: 10px 20px; /*espaçamento interno*/
+    margin: 5px;/*espaçamento externo*/
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+
+/*quando o usuário colocar o mouse
+ em cima */
+.menu:hover{
+   background-color: #f5b840; 
+}
+
+/* #grifinolia{
+    width: 200px;
+    border-style:double;
+    border-radius: 20px;
+} */

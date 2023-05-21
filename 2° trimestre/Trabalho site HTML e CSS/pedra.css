@@ -1,0 +1,36 @@
+body{
+    background-color: #ffffff;
+    font-family: "Ariel";
+}
+@font-face{
+    font-family: 'harry potter';
+    src: url('HARRYP__.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ h1{
+    color: #003566;
+    font-family: 'harry potter';
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.menu{
+    background-color:#184e77 ;
+    color:#e9edc9;
+    text-decoration: none;
+    justify-content: center;
+    font-weight: 700; /*400 normal, 700 negrito*/
+    display: inline-block; /* depois eu explico*/
+    padding: 10px 20px; /*espaçamento interno*/
+    margin: 5px;/*espaçamento externo*/
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+.menu:hover{
+    background-color: #90e0ef;
+}
+
